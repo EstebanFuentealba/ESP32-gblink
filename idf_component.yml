@@ -1,0 +1,7 @@
+version: "0.0.1"
+description: "Game Boy Game Link Cable interface library for ESP32"
+url: "https://github.com/EstebanFuentealba/ESP32-gblink/"
+license: "MIT"
+dependencies:
+  idf:
+    version: ">=5.0"
