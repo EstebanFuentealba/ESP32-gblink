@@ -1,2 +1,2 @@
-idf_component_register(SRCS "ESP32-gblink.c"
+idf_component_register(SRCS "gblink.c"
                     INCLUDE_DIRS "include")
