@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 #include "driver/gpio.h"
 #include "esp_timer.h"
 #include "esp_log.h"
@@ -28,8 +30,6 @@ struct gblink {
     TickType_t time;
 
     uint32_t bitclk_timeout_us;
-
-    SemaphoreHandle_t packet_done;
 
     void (*callback)(void* cb_context, uint8_t in);
     void *cb_context;
